@@ -20,11 +20,11 @@ mongorestore dump/
 
 This will create a mongo dataset called ents with different collections:
 
-- ** classifiers **: Classification results for the packed dataset.
-- ** classifiersUPck **: Classification results for the non-packed dataset.
-- ** classifiersMix **: Classification results for the mix dataset.
-- ** ROCPck **: Results for the ROC curves of the three datasets
-- ** ents **: Entropy profiles
-- ** av **: anti-virus reports for malware
-- ** packerClass **: Packers's families
-- ** packerMal **: Packers for malware and benign-ware
+- **classifiers**: Classification results for the packed dataset.
+- **classifiersUPck**: Classification results for the non-packed dataset.
+- **classifiersMix**: Classification results for the mix dataset.
+- **ROCPck**: Results for the ROC curves of the three datasets
+- **ents**: Entropy profiles
+- **av**: anti-virus reports for malware
+- **packerClass**: Packers's families
+- **packerMal**: Packers for malware and benign-ware
