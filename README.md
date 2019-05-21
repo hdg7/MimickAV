@@ -1,6 +1,6 @@
 # MimickAV
 
-MimickAV is a imitation system that can learn to predict the behaviour of different anti-virus engines. It is based on Entropy Profiles. These profiles are extracted using EnTS:
+MimickAV is an imitation system that can learn to predict the behaviour of different anti-virus engines. It is based on Entropy Profiles. These profiles are extracted using EnTS:
 
 https://github.com/hdg7/EnTS/
 
