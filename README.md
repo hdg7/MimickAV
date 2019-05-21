@@ -6,7 +6,9 @@ https://github.com/hdg7/EnTS/
 
 If you want to use MimickAV please cite the following paper:
 
-----
+https://www.mdpi.com/1099-4300/21/5/513/htm
+
+Héctor D. Menéndez; José Luis Llorente. Mimicking Anti-Viruses with Machine Learning and Entropy Profiles. Entropy 2019, Volume 21, Issue 5, 513.
 
 ## Dataset
 
