@@ -18,13 +18,36 @@ mv ents/ dump/
 mongorestore dump/
 ```
 
-This will create a mongo dataset called ents with different collections:
+This will create a mongo dataset called ents with different collections [better names coming]:
 
 - **classifiers**: Classification results for the packed dataset.
 - **classifiersUPck**: Classification results for the non-packed dataset.
 - **classifiersMix**: Classification results for the mix dataset.
 - **ROCPck**: Results for the ROC curves of the three datasets
-- **ents**: Entropy profiles
-- **av**: anti-virus reports for malware
+- **ents**: Entropy profiles, gGenerated with EntS
+- **av**: anti-virus reports for malware, obtained with VirusTotal
 - **packerClass**: Packers's families
 - **packerMal**: Packers for malware and benign-ware
+
+## Software
+
+To create the data that you can find from the paper, you just need to use the following programs:
+
+- **classification.R**: Runs the classifiers using the information from ents and av datasets (see the dataset section). It creates the classifier dataset.
+- **classificationUPck.R**: Equivalent to the former but for non-packed data.
+- **classificationMix.R**: Equivalent to the former but for Mix data.
+- **classificationROC.R**: Creates the ROC curve for Pck data.
+- **classificationROCUPck.R**: Creates the ROC curve for non-packed data.
+- **classificationROCMix.R**: Creates the ROC curve for Mix data.
+
+To adapt it to your MongoDB software, change the script with your database info. In our case, the database is in a local network url="mongodb://viru8", you can change the domain name with yours.
+
+Example of running (for the ROC is equivalent):
+
+```
+./classification.R repetition_num
+./classification.R 0
+```
+
+You need to set up your Mongo system in advance.
+
